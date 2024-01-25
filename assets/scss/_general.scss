@@ -1,0 +1,44 @@
+@use "sass:map";
+
+$font-weights: ('extralight': 200, 'light': 300, 'regular': 400, 'medium': 500, 'semibold': 600, 'bold': 700, 'extrabold': 800, 'black': 900);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Stencil One', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+h1{
+    font-size: 42px;
+    font-weight: map-get($map: $font-weights, $key: bold);
+}
+
+h2{
+    font-size: 18px;
+    font-weight: map-get($map: $font-weights, $key: bold);
+}
+
+h3{
+    font-size: 14px;
+    font-weight: map-get($map: $font-weights, $key: 'regular');
+}
